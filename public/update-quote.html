@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <title>Quote API</title>
@@ -17,20 +16,19 @@
       <a href="add-quote.html">Add a New Quote</a>
       <a href="update-quote.html">Update a Quote</a>
     </nav>
-    <h2>Get Quotes</h2>
-    <div class="request-buttons">
-      <div>
-        <button id="fetch-random">Fetch a Random Quote</button>
-        <button id="fetch-quotes">Fetch all Quotes</button>
-      </div>
-      <div>
-        <input id="author" value="" />
-        <button id="fetch-by-author">Fetch by Author</button>
-      </div>
+    <h2>Update Quote</h2>
+    <div class="inputs">
+      <label for="quote-id">Id:</label>
+      <input id="quote-id" value="" />
+      <label for="edit-quote">Quote text:</label>
+      <input id="edit-quote" value="" placeholder="Edit quote" />
+      <label for="edit-person">Person:</label>
+      <input id="edit-person" value="" placeholder="Edit person" />
     </div>
-    <div id="quote-container">
-      <!-- This is where the random quote will be displayed in -->
+    <div>
+      <button id="update-quote">Update Quote</button>
     </div>
-    <script src="script.js"></script>
+    <div class="update-container"></div>
+    <script src="update-quote.js"></script>
   </body>
 </html>
